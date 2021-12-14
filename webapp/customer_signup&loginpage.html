@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CUSTOMER/ COMPANY AGENT PAGE </title>
+<link rel="stylesheet" type="text/css" href="customer_signupandloginpagecss.css">
+<meta name="customer" content="width=device-width, initial-scale=1">
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" >Customer Page</a>
+  <div style="float:right"><a onclick="scrollWin()">About</a></div>
+  <div style="float:right"><a onclick="scrollWin()">Customer Service</a></div>
+  <div style="float:right"><a href="#newspage">News</a></div>
+   <div style="float:right"><a href="#newspage">Contact</a></div>
+   <div style="float:right"><a href="#newspage">Home</a></div>
+  
+</div>
+
+
+
+<div class="bg-img">
+                                             <!-- SIGN IN BUTTON-->
+<button class="buttonallign" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-up</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Profile_pic" class="profilepic">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>CompanyAgent-Name / Customer Name</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="cname"><b>Company-name</b></label>
+      <input type="text" placeholder="Enter company name" name="cname" required>
+
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="Enter your email address" name="email" required>
+
+      <label for="spsw"><b>Set-Password</b></label>
+      <input type="password" placeholder="Enter Password" name="spsw" required>
+
+      <label for="spsw"><b>Enter the Password again</b></label>
+      <input type="password" placeholder="Enter Password again" name="spsw" required>
+
+      <button type="submit">Sign-in</button>
+            <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                                              <!-- LOGIN BUTTON -->
+
+<button class="buttonallign" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Profile_pic" class="profilepic">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</div>
+<div  id="Service" class="service">
+  <p>
+  <h2 style="color: purple;">Customer Service</h2>
+  <h4><ul class="bulletin" style="color: purple;">
+    <li>Resolving issues quickly</li>
+    <li>Providing 24/7 support</li>
+    <li>Personalizing interactions</li>
+    <li>Helping customers help themselves</li> 
+    </ul>
+
+  </h4>
+</p>
+</div>
+<div  >
+<footer class="footer" >
+  <p id="ff">Contact<br>
+  <h5>Mail us...</h5></p>
+
+  <p id="ff">Visit us<br>
+  <h5>href="address">mail us...</h5></p>
+
+  <p id="ff">Commeercials<br>
+  <h5>news...</h5></p>
+
+  <p id="ff">Blogs<br>
+  <p><h5>check out..</h5></p>
+</footer>
+</div>
+<script>
+function scrollWin() {
+  window.scrollBy(0, 500);
+}
+</script>
+
+</body>
+</html>
